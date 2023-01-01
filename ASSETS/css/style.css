@@ -112,62 +112,124 @@ header nav ul li a:hover::after {
 #sobre p {
     margin-inline: auto;
     margin-bottom: 10px;
+    padding-bottom: 10px;
     text-align: justify;
     font-size: clamp(1.6rem, 2vw, 1.8rem);
     width: 80%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
 }
 
-                /* Inicio da section dos trabalhos */
+/* Inicio da section dos trabalhos */
 
-#trabalhos{
-width: 100%;
-height: auto;
-border: 2px solid red;
+#trabalhos {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#trabalhos h2 {
+    margin-inline: auto;
+    margin-block: 20px;
+    font-size: clamp(2.4rem,3vw,3.2rem);
+}
+
+#trabalhos img {
+    background-color: #f095338e;
+    border: none;
+    border-radius: 25%;
+    margin-bottom: 30px;
+}
+
+#trabalhosContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+    margin-bottom: 30px;
+    gap: 25px;
+}
+
+#trabalhos .cardTrabalhos {
+    border: .5px solid rgba(0, 0, 0, 0.185);
+    width: 450px;
+    /* max-width: 300px; */
+    height: auto;
+    background: #f4f4f4a1;
+    box-shadow: 3px 3px 3px rgba(60, 57, 57, 0.3);
+    border-radius: 6px;
+    padding-inline: auto;
+}
+
+#trabalhos .cardTrabalhos h3 {
+    /* text-transform: uppercase; */
+    font-size: clamp(2rem, 1vw, 2.2rem);
+    margin-block: 10px;
+}
+
+#trabalhos .cardTrabalhos p {
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.788);
+    text-align: justify;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+}
+
+/* inicio dos parceiroa */
+
+#parceiros{
+
+}
+
+#parceiros h2{
 text-align: center;
+font-size: clamp(2.4rem,3vw,3.2rem);
+padding-block: 25px;
 }
 
-#trabalhos h2{
-margin-block: 20px;
+#parceiros .parceirosContainer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 12px;
 }
 
-#trabalhos img{
-background-color: #f095338e;
-border: none;
-border-radius: 25%;
-margin-bottom: 30px;
-}
-
-#trabalhosContainer{
+#parceiros .parceirosCard{
 display: flex;
 align-items: center;
-justify-content: space-around;
-margin-inline: 20px;
-margin-bottom: 30px;
-gap: 25px;
+flex-direction: column;
+
+width: 250px;
+height: 300px;
+margin-top: 30px;
+background: #F3F4F6;
+border-radius: 4px;
 }
 
 
-#trabalhos .cardTrabalhos{
-border: .5px solid rgba(0, 0, 0, 0.185);
-width: 450px;
-/* max-width: 300px; */
-
-height: auto;
-box-shadow: 5px 5px 10px #b9b9b2cc;
-padding-inline: auto;
+#parceiros .parceirosCard h3{
+margin-top: 20px;
+font-size: clamp(2rem, 1vw, 2.2rem);
 }
 
-#trabalhos .cardTrabalhos h3{
-text-transform: uppercase;
-font-size: clamp(2rem,1vw,2.2rem);
 
+#parceiros .parceirosCard .parceiroImg{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: #808080;
+margin: 5px 0 20px;
 }
 
-#trabalhos .cardTrabalhos p{
-font-size: clamp(1.4rem,2vw,1.6rem);
-font-weight: 400;
-color: rgba(0, 0, 0, 0.788);
-text-align: justify;
-padding-inline: 10px;
-padding-bottom: 10px;
+#parceiros .parceirosCard p{
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.788);
+    text-align: justify;
+    padding-inline: 12px;
+    padding-bottom: 10px;
 }
