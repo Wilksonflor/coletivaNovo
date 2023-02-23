@@ -101,7 +101,23 @@ header nav ul li a:hover::after {
     height: 20px;
 }
 
-/* Aqui termina a parte do Header e Menu */
+/* Aqui termina a parte do Header e Menu Desktop */
+
+#menuMobileContainer{
+    display: none;
+}
+#menuMobileContainer #menuMobile button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+#menuMobileContainer #menuMobile button i{
+    font-size: 1.6rem;
+    background-color: transparent;
+}
+
+
+/* Aqui termina a parte do Header e Menu Mobile */
 
 #sobre {
     width: 90%;
@@ -245,4 +261,16 @@ header nav ul li a:hover::after {
     text-align: justify;
     padding-inline: 12px;
     padding-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 720px){
+
+    #menuDesktop{
+        display: none;
+    }
+    #menuMobileContainer{
+        display: flex;
+    }
 }
