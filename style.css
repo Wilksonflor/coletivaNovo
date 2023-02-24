@@ -106,16 +106,33 @@ header nav ul li a:hover::after {
 #menuMobileContainer{
     display: none;
 }
+#menuMobile{
+    border: 2px solid red;
+    width: 100%;
+}
 #menuMobileContainer #menuMobile button{
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
 #menuMobileContainer #menuMobile button i{
-    font-size: 1.6rem;
+    font-size: 2rem;
     background-color: transparent;
 }
-
+#menuOpen{
+    position: fixed;
+    z-index: 100;
+    top: 3rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+}
+#
+#menuClose{
+    display: none;
+}
 
 /* Aqui termina a parte do Header e Menu Mobile */
 
